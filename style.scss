@@ -1,0 +1,75 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #404040;
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 60px 0;
+  }
+}
+
+.slide {
+  margin: 0 auto 10px auto;
+  width: 70%;
+  button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: grey;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  .button-right {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 220px;
+  }
+  .movieInfo {
+    background-color: white;
+    border: 1px solid grey;
+    display: flex;
+    height: 520px;
+    box-shadow: 10px 10px 5px grey;
+
+    img {
+      margin: 50px 60px 0px 150px;
+      height: 400px;
+    }
+    .movieDescription {
+      margin-top: 30px;
+      width: 400px;
+      text-align: left;
+      p {
+        font-size: 20px;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: -40px;
+  .dots {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active {
+    background-color: black;
+  }
+}

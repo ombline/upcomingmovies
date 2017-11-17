@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.min.css">
+    <title>Upcoming Movies</title>
+  </head>
+
+  <body>
+    <h1>🎥 Upcoming movies 🎥</h1>
+
+      <div class="slide">
+        <button class="button button-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button button-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <div class="dots-container">
+      </div>
+
+  </body>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://api.themoviedb.org/3/movie/upcoming?api_key=e082a5c50ed38ae74299db1d0eb822fe">
+  </script>
+  <script src="script.js"></script>
+</html>
